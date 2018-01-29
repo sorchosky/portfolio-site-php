@@ -1,0 +1,31 @@
+@import "../helpers/variables";
+
+.btn,
+input.btn{
+  font-family: "Sofia", "Futura", helvetica, arial, sans-serif;
+  color: #fff;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  border: none;
+  background-color: #2962ff;
+  padding: 1.3em 2.8em;
+  display: block;
+
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover,
+input.btn:hover{
+  background-color: #448aff;
+  cursor: pointer;
+}
+
+.current a{
+  color: $accent-color;
+}
+
+.logo.current{
+  fill: $accent-color;
+}

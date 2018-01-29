@@ -1,0 +1,36 @@
+/* Navigation and Footer*/
+
+nav,
+footer{
+  display: flex;
+  justify-content: space-between;
+  max-width: 120em;
+  margin: auto;
+  padding: 0 3.2em;
+}
+
+nav .logo,
+footer .logo{
+  justify-content: flex-start;
+}
+
+nav ul,
+footer div.footer-right{
+  display: inline-block;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+nav li,
+footer div.footer-right li{
+  display: inline-block;
+}
+
+footer{
+  margin-top: 6em;
+  margin-bottom: 3.6em;
+}
+
+.footer-right{
+  margin-right: 1em;
+}
