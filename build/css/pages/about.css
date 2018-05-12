@@ -1,0 +1,26 @@
+/****************
+Resume
+****************/
+/* Article Cards */
+.textured {
+  background: url(../../img/noisy_grid.png);
+  background-repeat: repeat;
+  width: 100%;
+  padding: 6.4em 0;
+  margin-bottom: 8.821em; }
+
+.textured > section {
+  max-width: 120em;
+  padding: 0 3.2em; }
+
+.resume-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.resume-entry > .main {
+  -ms-flex-item-align: end;
+  align-self: flex-end; }

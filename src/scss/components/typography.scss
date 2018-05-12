@@ -1,0 +1,149 @@
+@import "../helpers/variables";
+
+// Typography
+
+.type{
+  font-family: $primary-font-stack;
+  font-weight: 400;
+  color: $primary-color;
+  text-align: left;
+}
+
+h1 {
+  @extend .type;
+  font-size: 6em;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1, h2, h3, a{
+  span{
+    color: $accent-color;
+  }
+}
+
+h2 {
+  @extend .type;
+  font-size: 4em;
+  margin: 0 0 0.6em 0;
+}
+
+h3 {
+  @extend .type;
+  font-size: 3em;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+h4 {
+  @extend .type;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h5 {
+  @extend .type;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #cfd8dc;
+}
+
+h6 {
+  @extend .type;
+  font-size: 1.3em;
+  margin: 0;
+  color: #cfd8dc;
+  max-width: 60em;
+}
+
+p {
+  @extend .type;
+  font-size: 1.6em;
+  line-height: 1.625;
+}
+
+.textured{
+  h6 {
+    color: $primary-color;
+    opacity: 0.6;
+  }
+}
+
+.main {
+  p {
+  font-size: 2em;
+  line-height: 1.7;
+  margin-top: 0;
+  }
+}
+
+.quad-flex-grid p{
+  line-height: 1.4;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    text-decoration: underline;
+    color: $accent-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.logo{
+  fill: $primary-color;
+  &:hover{
+    fill: $accent-color;
+  }
+}
+
+/*Custom/Class styles*/
+
+nav > ul a,
+footer ul a {
+  font-size: 1.6em;
+  padding-left: 2em;
+  color: $primary-color;
+  font-family: "Sofia", "Futura", helvetica, arial, sans-serif;
+  text-transform: uppercase;
+}
+
+nav{
+  span{
+    color: $accent-color;
+  }
+}
+
+/*Contact Form*/
+label{
+  @extend h3;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+form.contact-form {
+  div {
+    input, textarea{
+    font-family: $primary-font-stack;
+    font-size: 1.6em;
+    line-height: 1.4;
+    padding: 0.5em;
+    }
+  }
+}
+
+/*Resume Section*/
+.resume-entry {
+  h3 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0;
+  }
+  h4 {
+    font-weight: 400;
+  }
+}

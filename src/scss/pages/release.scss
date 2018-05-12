@@ -1,0 +1,68 @@
+@import "../helpers/variables";
+
+@import "../components/article.scss";
+@import "../components/buttons.scss";
+@import "../components/typography.scss";
+
+// Intro Section
+
+div.top_background{
+  width: 100%;
+  height: auto;
+  background-image: url("../../img/release/cincinnati-skyline-fade.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#intro{
+  margin-bottom: 3em;
+  padding-bottom: 3em;
+  padding-left: 0;
+  h1{
+  }
+}
+
+.design-mockup-container{
+  max-width: 30em;
+}
+
+// Main Description Section
+
+div.primary-color{
+  width: 100%;
+  background-color: $primary-color-release;
+}
+
+section.primary-color-section {
+  background-color: $primary-color-release;
+  h5{
+    color: $primary-color-overlay-release !important;
+  }
+}
+
+img.release-logo {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 50em;
+  padding: 6em 0;
+}
+
+img.screens-perspective {
+  margin-bottom: 3em;
+}
+
+.release-screens {
+  img{
+    padding: 0 1em;
+  }
+}
+
+img.wireframe-img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 70em;
+  padding-bottom: 3em;
+}

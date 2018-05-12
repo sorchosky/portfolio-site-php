@@ -1,0 +1,69 @@
+/*Import fonts*/
+@font-face {
+  font-family: "Sofia";
+  src: url("../../fonts/Sofia_Pro_Regular.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../../fonts/Sofia_Pro_Bold.otf");
+  font-weight: 700; }
+
+article.feature {
+  height: 37.4em; }
+
+article.feature-ravenna {
+  background-image: url("../img/ravenna/mountains.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+div.gradient {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.feature-text {
+  padding: 4em;
+  -ms-flex-item-align: center;
+  align-self: center; }
+  .feature-text * {
+    color: #fff; }
+
+section.other_projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: horizontal;
+  flex-direction: horizontal;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+article.project {
+  width: 46%; }
+  article.project img {
+    width: 100%;
+    margin-bottom: 2em; }
+  article.project h3 {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  article.project a {
+    font-family: "Sofia", "Futura", helvetica, arial, sans-serif;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; }
