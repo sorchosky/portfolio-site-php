@@ -1,0 +1,60 @@
+.two-col-layout {
+  display: block;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+main {
+  display: block;
+  width: 100%;
+  margin-bottom: 6em;
+  @include tablet {
+    width: 65%;
+  }
+}
+
+aside {
+  display: block;
+  width: 100%;
+  min-width: 15em;
+  margin-bottom: 2em;
+  @include tablet {
+    width: 25%;
+  }
+}
+
+div.two-col-layout {
+  aside {
+    ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include tablet {
+      display: block;
+    }
+    list-style: none;
+    padding: 0;
+      li {
+        margin-bottom: 3em;
+        width: 33%;
+        @include tablet {
+          width: auto;
+        }
+      }
+    }
+    ul.credits li {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.two-col-layout > aside h4,
+.two-col-layout > aside p,
+.two-col-layout > aside h5{
+  margin: 0.25em 0;
+  padding: 0;
+}

@@ -1,27 +1,44 @@
 $(document).ready(function(){
-  $('.release-screens').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 2,
-        }
-      }
-    ]
-  });
-  $('.pitch-deck-slides').slick({
+
+  $('.slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
     autoplaySpeed: 4000,
-    dots: true,
-  })
+    arrows: false,
+    dots: false
+  });
 });
+
+$('a[data-slide]').click(function(e) {
+   e.preventDefault();
+   $('.slider-nav a').removeClass("active");
+   $(this).addClass("active");
+   var slideno = $(this).data('slide');
+   $('.slider').slick('slickGoTo', slideno - 1);
+ });
+
+  // $('.release-screens').slick({
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 4000,
+  //   dots: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 800,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       }
+  //     }
+  //   ]
+  // });
+  // $('.pitch-deck-slides').slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 4000,
+  //   dots: true,
+  // });
 
 var today = new Date();
 var year = today.getYear() + 1900;
@@ -50,7 +67,4 @@ $.ajax({
 	error: function(data){
 		console.log(data); // send the error notifications to console
 	}
-});
-$('feature-text').click(function(){
-	window.location = ravenna.html;
 });

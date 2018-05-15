@@ -7,25 +7,33 @@
 
 <?php include 'partial/google-analytics.php'; ?>
 
+<!-- Header -->
+<?php include 'partial/navigation.php'; ?>
+
 <div class="wrapper">
-  <!-- Header -->
-  <?php include 'partial/navigation.php'; ?>
 
   <!-- Intro -->
   <section id="intro">
-    <h1><span>Hello.</span> I’m Steve Orchosky, and I am a digital designer and illustrator.</h1>
+    <h1 class="homepage">I’m Steve Orchosky, and I am a digital designer and illustrator.</h1>
+    <div class="animation"></div>
+    <a class="continue" href="#works">
+      <h5 class="continue__text">Continue</h5>
+      <img class="continue__arrow" src="img/SVG/scroll_arrow.svg" srcset="img/2x/scroll_arrow@2x.png 1x, img/SVG/scroll_arrow.svg 2x" alt="down-arrow">
+    </a>
   </section>
 
-  <section>
-    <article class="feature feature-ravenna">
-      <div class="gradient">
-        <a href="ravenna.php" class="feature-text">
-          <h3 class="feature-text-heading">The Club at Ravenna Website Design</h3>
-          <p class="feature-text-paragraph">Website design for The Club at Ravenna, a client of Clubessential.</p>
-          <p class="btn-text">View Project</p>
-        </a>  
-      </div>
-    </article>
+  <section id="works">
+    <a href="tempur-pedic-landing-pages.php">
+      <article class="feature feature-tempur-pedic-landing-pages">
+        <div class="gradient">
+          <div class="feature-text">
+            <h3 class="feature-text-heading">Tempur-Pedic Retailer Landing Pages</h3>
+            <p class="feature-text-paragraph">Website template design and development for Tempur-Pedic, a client of Icon Marketing Communications.</p>
+            <p class="btn-text">View Project</p> 
+          </div>
+        </div>
+      </article>
+    </a> 
   </section>
 
   <section class="other_projects">

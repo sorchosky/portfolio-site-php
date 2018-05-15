@@ -1,0 +1,71 @@
+/***********
+Contact Section
+************/
+
+/*Social Icons*/
+
+ul.social-icons {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 6em;
+}
+
+ul.social-icons > li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 3em;
+}
+
+ul.social-icons > li i.fa {
+  font-size: 3.6em;
+  color: #cfd8dc;
+  transition: 0.2s ease-in-out;
+}
+
+ul.social-icons > li i.fa:hover {
+  color: $accent-color;
+}
+
+/*Contact Form*/
+form.contact-form {
+  display: block;
+  width: 100%;
+  max-width: 79.4em;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+form.contact-form div {
+  margin-bottom: 2.4em;
+  width: 100%;
+  @include tablet {
+    width: 50%;
+  }
+}
+
+form.contact-form div.comments {
+  display: block;
+  width: 100%;
+}
+
+form.contact-form input.text-field, textarea {
+  display: block;
+  width: 95%;
+  flex: 1;
+  resize: none;
+  overflow: auto;
+  @include tablet {
+    width: 90%;
+  }
+}
+
+form.contact-form > div > textarea {
+  flex:2;
+}
+
+input, textarea {
+  border: 1px solid #91a4ad;
+}

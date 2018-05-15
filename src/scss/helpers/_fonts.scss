@@ -1,13 +1,34 @@
 /*Import fonts*/
 
-@font-face{
-  font-family: "Sofia";
-  src: url('../../fonts/Sofia_Pro_Regular.otf');
-  font-weight: 400;
+@font-face {
+	font-family: 'Intervogue';
+	src: url('fonts/Intervogue_Reg/Intervogue-Reg.eot'); /* IE9 Compat Modes */
+	src: url('fonts/Intervogue_Reg/Intervogue-Reg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/Intervogue_Reg/Intervogue-Reg.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/Intervogue_Reg/Intervogue-Reg.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/Intervogue_Reg/Intervogue-Reg.svg#svgIntervogue-Reg') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 400;
 }
 
-@font-face{
-  font-family: "Sofia";
-  src: url('../../fonts/Sofia_Pro_Bold.otf');
-  font-weight: 700;
+@font-face {
+	font-family: 'Intervogue';
+	src: url('fonts/Intervogue_Med/Intervogue-Med.eot'); /* IE9 Compat Modes */
+	src: url('fonts/Intervogue_Med/Intervogue-Med.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/Intervogue_Med/Intervogue-Med.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/Intervogue_Med/Intervogue-Med.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/Intervogue_Med/Intervogue-Med.svg#svgIntervogue-Med') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Intervogue';
+	src: url('fonts/Intervogue_Black/Intervogue-Black.eot'); /* IE9 Compat Modes */
+	src: url('fonts/Intervogue_Black/Intervogue-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('fonts/Intervogue_Black/Intervogue-Black.woff') format('woff'), /* Pretty Modern Browsers */
+		url('fonts/Intervogue_Black/Intervogue-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('fonts/Intervogue_Black/Intervogue-Black.svg#svgIntervogue-Black') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 900;
 }

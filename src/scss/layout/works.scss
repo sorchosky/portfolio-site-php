@@ -1,0 +1,75 @@
+/**********
+Works Pages
+**********/
+
+// Intro
+
+div.top_background--content{
+    padding: 0 3.2em;
+}
+
+.design-mockup-container{
+  width: 100%;
+  margin: auto;
+  position: relative;
+  bottom: -10em;
+}
+
+img.design-mockup{
+  width: 75%;
+  left: 12.5%;
+  position: relative;
+  z-index: 5;
+  margin: auto;
+}
+
+// Approved design
+.approved-design {
+  padding-top: 12em;
+  h2{
+    color: #fff;
+  }
+  margin-bottom: 5em;
+}
+
+@media all and (min-width: 728px) {
+  .approved-design {
+  padding-top: 20em;
+  }
+}
+
+.approved-design-img{
+  width: 100%;
+  z-index: 5;
+}
+
+section.approved-design-section{
+  position: relative;
+}
+
+section.secondary-color-section{
+  padding: 6.4em 3.2em;
+}
+
+// Carousel Edits
+.slick-dots li button{
+  width: 2em;
+  height: 2em;
+  padding: 1em;
+  font-size: 2em;
+}
+
+.slick-dots li button:before{
+  font-size: 2em;
+  margin-top: 0.5em;
+  color: #525352;
+  opacity: 0.3;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.slick-dots li.slick-active button:before{
+  color: $accent-color;
+  opacity: 1;
+}

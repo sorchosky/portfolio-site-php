@@ -1,0 +1,55 @@
+/* Navigation and Footer*/
+
+nav,
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+  position: absolute;
+  background: rgba(255, 255, 255, 1);
+  z-index: 30;
+}
+
+nav a.logo,
+footer a.logo {
+  width: 4em;
+  padding: 1em;
+  justify-content: flex-start;
+  img{
+    width: 4em;
+  }
+}
+
+nav a.logo {
+  background-color: $accent-color;
+  &:hover {
+    background-color: $accent-color--hover;
+  }
+}
+
+nav ul,
+footer div.footer-right{
+  display: inline-block;
+  justify-content: flex-end;
+  text-align: right;
+  box-sizing: border-box;
+  margin-right: 2em;
+}
+
+nav li,
+footer div.footer-right li{
+  display: inline-block;
+}
+
+footer{
+  margin-top: 6em;
+  margin-bottom: 3.6em;
+}
+
+.footer-right{
+  margin-right: 1em;
+}

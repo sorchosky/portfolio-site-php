@@ -1,0 +1,36 @@
+// Main Slider
+
+.slider{
+	padding-top: 4em;
+	position: relative;
+}
+
+// Navigation Slider
+
+div.slider-nav-container {
+	display: block;
+	position: relative;
+}
+
+div.slider-nav {
+	display: block;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	padding-top: 1em;
+	a {
+		margin: auto;
+		position: relative;
+		margin: 0.5em;
+		padding-top: 0.25em;
+		display: inline-block;
+		border-top: 4px solid $secondary-color;
+		&.active {
+			border-top: 4px solid $accent-color;
+		}
+	}
+	img {
+		width: 4em;
+		height: 4em;
+	}
+}

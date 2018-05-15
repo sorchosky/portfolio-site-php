@@ -1,40 +1,28 @@
 // SteveOrchosky.com Stylesheet
 // Version 2018.00.01
 
+//Reset
+@import "helpers/reset";
 //Helpers
-@import 'helpers/fonts';
-@import 'helpers/variables';
-@import 'helpers/mixins';
-// Variables
+@import "helpers/fonts";
 @import "helpers/variables";
+@import "helpers/mixins";
 
 // Components
-@import "components/article.scss";
 @import "components/buttons.scss";
 @import "components/typography.scss";
+@import "components/header.scss";
+@import "components/project-slider.scss";
+@import "components/form.scss";
 
-// Page Overrides
-@import "pages/about.scss";
-@import "pages/email_success.scss";
-@import "pages/illustration.scss";
-@import "pages/index.scss";
-@import "pages/ravenna.scss";
-@import "pages/release.scss";
-@import "pages/works.scss";
-
-// Media Query Layouts
-@media all {
-  @import "layout/all.scss";
-}
-
-@media all and (min-width: 768px) {
-  @import "layout/tablet.scss";
-}
-
-@media all and (min-width: 1200px) {
-  @import "layout/desktop.scss";
-}
-
-@media all and (min-width: 1600px) {
-  @import "layout/large-desktop.scss";
-}
+// Page Layouts
+@import "layout/global.scss";
+@import "layout/home__intro.scss";
+@import "layout/home__projects.scss";
+@import "layout/about.scss";
+@import "layout/project__two-column.scss";
+@import "layout/project__tempur-pedic-landing-pages.scss";
+@import "layout/release.scss";
+@import "layout/works.scss";
+@import "layout/illustration.scss";
+@import "layout/email_success.scss";

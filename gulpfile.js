@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var autoprefixer = require('gulp-autoprefixer');
 var cssmin = require('gulp-cssmin');
+var mmq = require('gulp-merge-media-queries')
 var gulpSequence = require('gulp-sequence');
 var concat = require('gulp-concat');
 
@@ -33,6 +34,9 @@ gulp.task('sass', function() {
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
+        }))
+        .pipe(mmq({
+            log: false
         }))
         .pipe(cssmin())
         .pipe(gulp.dest('./build'))
