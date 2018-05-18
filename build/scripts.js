@@ -68,3 +68,22 @@ $.ajax({
 		console.log(data); // send the error notifications to console
 	}
 });
+$.fn.scrollView = function () {
+  return this.each(function () {
+    $('html, body').animate({
+      scrollTop: $(this).offset().top
+    }, 300);
+  });
+}
+
+$('#continueButton').click(function (event) {
+  event.preventDefault();
+  $('#works').scrollView();
+});
+$("#projects").click(function(){
+	$(".overlay-container").show(300);
+});
+
+$("#fa-close").click(function(){
+	$(".overlay-container").hide(1000);
+});

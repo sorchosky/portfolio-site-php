@@ -15,8 +15,7 @@ gulp.task('default', function() {
     browserSync.init({
         base: "./build",
         port: "8888",
-        keepalive: true,
-        open: true,
+        proxy: "http://localhost:8888",
         browser: ["google chrome"]
     });
 
@@ -60,7 +59,7 @@ gulp.task('php-partials', function() {
 // Copy js to build file
 gulp.task('scripts', function() {
     //Order script files will appear
-    gulp.src(['./src/js/slider.js', './src/js/current-year.js', './src/js/instagram.js', './src/js/window.location.js'])
+    gulp.src(['./src/js/slider.js', './src/js/current-year.js', './src/js/instagram.js', './src/js/scrollTo.js', './src/js/overlayNavigation.js'])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('./build/'))
     .pipe(browserSync.stream());

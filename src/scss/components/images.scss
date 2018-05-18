@@ -1,3 +1,12 @@
+// Global classes
 .responsive-img {
   width: 100%;
+}
+
+// Specific images
+.logo{
+  fill: $black;
+  &:hover{
+    fill: $blue;
+  }
 }

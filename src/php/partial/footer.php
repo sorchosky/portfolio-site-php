@@ -1,6 +1,6 @@
 <!-- Contact -->
 <section>
-  <h2 style="max-width: 60em; margin-bottom: 1em;">Follow my work or contact me below.</h2>
+  <h2 class="follow-my-work">Follow my work or contact me below.</h2>
 
   <!-- Social Media -->
   <ul class="social-icons">
@@ -29,11 +29,11 @@
   </a>
 
   <div class="footer-right">
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="illustration.html">Illustration</a></li>
+    <ul class="footer-right__nav">
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="illustration.html" class="nav-link">Illustration</a></li>
     </ul>
-    <h6>Copyright &copy; <span id="current-year"></span> Steve Orchosky. All Rights Reserved.</h6>
+    <h6 class="footer-copyright">Copyright &copy; <span id="current-year"></span> Steve Orchosky. All Rights Reserved.</h6>
   </div>
 
 </footer>

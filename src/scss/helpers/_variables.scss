@@ -1,15 +1,14 @@
 @import "fonts";
 
-$primary-font-stack: "Intervogue", "Futura", helvetica, arial, sans-serif;
+$intervogue-stack: "Intervogue", "Futura", helvetica, arial, sans-serif;
 
-$primary-color: #38474f;
-$secondary-color: #cfd8dc;
-$accent-color: #2962ff;
-$accent-color--hover: #3493FF;
+$black: #38474f;
+$black--50: rgba(56,71,79, 0.5);
+$black--90: rgba(0,10,15, 0.95);
 
-$primary-color-ravenna: #b24c19;
-$primary-color-overlay-ravenna: #c6721e;
-$secondary-color-ravenna: #f6ecd1;
 
-$primary-color-release: #3E98D4;
-$primary-color-overlay-release: #21457F;
+$light-gray: #cfd8dc;
+$white: #fff;
+
+$blue: #2962ff;
+$blue--hover: #3493FF;

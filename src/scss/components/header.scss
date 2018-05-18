@@ -1,21 +1,16 @@
 /* Navigation and Footer*/
 
-nav,
-footer{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-
-nav {
   position: absolute;
-  background: rgba(255, 255, 255, 1);
+  background: $white;
   z-index: 30;
 }
 
-nav a.logo,
-footer a.logo {
+nav a.logo {
   width: 4em;
   padding: 1em;
   justify-content: flex-start;
@@ -25,14 +20,13 @@ footer a.logo {
 }
 
 nav a.logo {
-  background-color: $accent-color;
+  background-color: $blue;
   &:hover {
-    background-color: $accent-color--hover;
+    background-color: $blue--hover;
   }
 }
 
-nav ul,
-footer div.footer-right{
+nav ul {
   display: inline-block;
   justify-content: flex-end;
   text-align: right;
@@ -40,16 +34,38 @@ footer div.footer-right{
   margin-right: 2em;
 }
 
-nav li,
-footer div.footer-right li{
+nav li {
   display: inline-block;
 }
 
-footer{
-  margin-top: 6em;
-  margin-bottom: 3.6em;
+// Works nav overlay
+div.overlay-container {
+  display: none;
 }
 
-.footer-right{
-  margin-right: 1em;
+div.overlay {
+  background-color: $black--90;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9998;
+  * {
+    color: $white;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul.overlay-nav {
+  text-align: center;
+}
+
+i.fa.fa-close {
+  position: absolute;
+  color: $white;
+  right: 0.5em;
+  top: 0.5em;
+  font-size: 2em;
+  z-index: 9999;
 }

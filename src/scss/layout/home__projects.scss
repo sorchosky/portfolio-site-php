@@ -1,53 +1,101 @@
 article.feature {
-  height: 37.4em;
-}
-
-article.feature-tempur-pedic-landing-pages {
-  background-image: url("img/2x/tempur-pedic-feature@2x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: gray;
-  display: flex;
-  width: 100%;
-}
-
-div.gradient {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.35) 60%, rgba(0, 0, 0, 0));
-  width:50%;
-  display: flex;
-}
-
-.feature-text {
-  padding: 4em;
-  align-self: center;
-  * {
-    color: #fff;
+  @include tablet {
+    height: 24em;  
   }
 }
 
-section.other_projects{
+div.feature-img-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20em;
+  margin-bottom: 1em;
+  overflow: hidden;
+  @include tablet {
+    display: none;
+  }
+  img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 20em;
+  }
+}
+
+article {
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 4.2em;
+  a {
+    box-sizing: border-box;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+    &:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transform: scale(1.01);
+    }
+  }
+  img {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+  }
+  div.text {
+    box-sizing: border-box;
+    padding: 1em 2em 2em 2em;
+  }
+}
+
+article.feature-tempur-pedic-landing-pages {
+  @include tablet {
+    background-image: url("img/2x/tempur-pedic-feature@2x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $black;
+    display: flex;
+    width: 100%;
+  }
+}
+
+div.gradient {
+  @include tablet {
+    display: block;
+    background: linear-gradient(to right, rgba(40, 40, 40, 0.4) 50%, rgba(40, 40, 40, 0));
+    width: 100%;
+    display: flex;
+  }
+}
+
+.feature-text {
+  @include tablet {
+    padding: 4em;
+    align-self: center;
+    width: 40%;
+    * {
+      color: $white;
+    }
+  }
+}
+
+section#works{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: horizontal;
   align-content: flex-start;
   justify-content: space-between;
 }
 
 article.project {
-  width: 46%;
+  width: 100%;
+  @include tablet {
+    width: 46%;
+  }
   img {
     width: 100%;
-    margin-bottom: 2em;
-  }
-  h3 {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  a {
-    font-family: $primary-font-stack;
-    font-size: 1.6em;
-    text-transform: uppercase;
-    letter-spacing:0.05em;
+    margin-bottom: 1em;
   }
 }

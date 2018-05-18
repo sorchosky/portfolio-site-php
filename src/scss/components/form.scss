@@ -2,35 +2,63 @@
 Contact Section
 ************/
 
+/*Contact Form*/
+label{
+  display: block;
+  font-family: $intervogue-stack;
+  font-weight: 500;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+form.contact-form {
+  input[type="text"], textarea{
+    font-family: $intervogue-stack;
+    font-size: 1em;
+    line-height: 1.4;
+    padding: 0.15em 0.5em;
+    transition: all 0.3 ease-in-out;
+    outline: 0;
+    &:focus {
+      box-sizing: border-box;
+      border: 1px solid $blue--hover;
+    }
+  }
+  textarea {
+    padding: 0.5em;
+  }
+}
+
 /*Social Icons*/
 
 ul.social-icons {
   display: inline-block;
   padding: 0;
-  margin-bottom: 6em;
+  margin-bottom: 3em;
 }
 
 ul.social-icons > li {
   display: inline-block;
   list-style: none;
-  margin-right: 3em;
+  margin-right: 2em;
 }
 
 ul.social-icons > li i.fa {
-  font-size: 3.6em;
+  font-size: 2.8em;
   color: #cfd8dc;
   transition: 0.2s ease-in-out;
-}
-
-ul.social-icons > li i.fa:hover {
-  color: $accent-color;
+  &:hover {
+    color: $blue;
+  }
 }
 
 /*Contact Form*/
 form.contact-form {
   display: block;
   width: 100%;
-  max-width: 79.4em;
+  max-width: 96em;
   @include tablet {
     display: flex;
     flex-wrap: wrap;
@@ -39,10 +67,10 @@ form.contact-form {
 }
 
 form.contact-form div {
-  margin-bottom: 2.4em;
+  margin-bottom: 1.8em;
   width: 100%;
   @include tablet {
-    width: 50%;
+    width: 46%;
   }
 }
 
@@ -53,12 +81,13 @@ form.contact-form div.comments {
 
 form.contact-form input.text-field, textarea {
   display: block;
-  width: 95%;
+  box-sizing: border-box;
+  width: 100%;
   flex: 1;
   resize: none;
   overflow: auto;
   @include tablet {
-    width: 90%;
+    width: 100%;
   }
 }
 

@@ -6,12 +6,11 @@ body{
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 62.5%;
 }
 
 // Main Body Styles
 section{
-  max-width: 120em;
+  max-width: 96em;
   margin: auto;
   margin-bottom: 3em;
   padding: 2em;
@@ -20,7 +19,7 @@ section{
 hr{
   max-width: 120em;
   margin: 6em auto;
-  border: 1px solid #cfd8dc;
+  border: 1px solid $light-gray;
 }
 
 ul{
